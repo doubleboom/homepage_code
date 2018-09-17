@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <title>愚夫教育</title>
+	   <script type="text/javascript">
+        var width_=document.documentElement.offsetWidth;
+        if(width_<1008){
+            width_=640;
+            document.documentElement.style.fontSize=width_/4+"px";
+            window.onresize= function () {
+                document.documentElement.style.fontSize=width_/4+"px";
+            };
+        }else{
+            document.documentElement.style.fontSize=width_/18+"px";
+            window.onresize= function () {
+                document.documentElement.style.fontSize=width_/18+"px";
+            };
+        }
+        window.resize= function () {
+            var width_=document.documentElement.offsetWidth;
+            if(width_<1008){
+                width_=640;
+                document.documentElement.style.fontSize=width_/4+"px";
+                window.onresize= function () {
+                    document.documentElement.style.fontSize=width_/4+"px";
+                };
+            }else{
+                document.documentElement.style.fontSize=width_/18+"px";
+                window.onresize= function () {
+                    document.documentElement.style.fontSize=width_/18+"px";
+                };
+            }
+        }
+    </script>
+	  
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

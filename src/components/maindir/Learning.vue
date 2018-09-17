@@ -1,0 +1,79 @@
+<template>
+<div id="learning" class="container">
+    <div class="title">
+        <span class="backgroundtext">LEARNING</span>
+        <div>
+            <p>深度学习之卷积神经网络</p>
+            <span>In-depth Learning</span>
+        </div>
+    </div>
+    <div id="learning_out">
+        <div class="container">
+            <div id="learning_in" class="row">
+                <div class="learning col-lg">
+                    <ul>
+                        <li class="learning_title">
+                            <img src="../../assets/images/learning1.png">
+                            <div class="title_text"><b>基础原理</b></div>
+                        </li>
+                        <!--<li class="learning_list"><a>通过愚夫智学针对中国孩子开的沉</a></li>
+                        <li class="learning_list"><a>浸式AI教学模式可以让孩子充分学</a></li>
+                        <li class="learning_list"><a>习AI的基础原理。将抽象复杂的AI</a></li>
+                        <li class="learning_list"><a>基础教育变成每一个孩子都能了解</a></li>
+                        <li class="learning_list"><a>掌握的基础知识。</a></li>-->
+						<p class="learning_list">通过愚夫智学针对中国孩子开发的沉浸式AI教学模式可以让孩子充分学习AI的基础原理。将抽象复杂的AI基础教育变成每一个孩子都能了解掌握的基础知识。</p>
+                    </ul>
+                </div>
+                <div class="learning col-lg">
+                    <ul>
+                        <li class="learning_title">
+                            <img src="../../assets/images/learning2.png">
+                            <div id="ai" class="title_text"><b>AI应用&nbsp;</b></div>
+                        </li>
+                        <!--<li class="learning_list"><a>愚夫智学主打无编程的AI应用制作</a></li>
+                        <li class="learning_list"><a>模式，让每一个孩子都能成为独立</a></li>
+                        <li class="learning_list"><a>的AI应用制作者，将孩子无穷的想</a></li>
+                        <li class="learning_list"><a>象力与AI完美结合一起创造出最前</a></li>
+                        <li class="learning_list"><a>沿的AI应用。</a></li>-->
+						<p class="learning_list">愚夫智学主打无编程的AI应用制作模式，让每一个孩子都能成为独立的AI应用制作者，将孩子无穷的想象力与AI完美结合，一起创造出最前沿的AI应用。</p>
+                    </ul>
+                </div>
+                <div class="learning col-lg">
+                    <ul>
+                        <li class="learning_title">
+                            <img src="../../assets/images/learning3.png">
+                            <div class="title_text"><b>深层学习</b></div>
+                        </li>
+                        <!--<li class="learning_list"><a>愚夫智学的AI深层学习课程将带给</a></li>
+                        <li class="learning_list"><a>孩子更专业的AI学习体验，将每一</a></li>
+                        <li class="learning_list"><a>个孩子都有机会成为AI小小科学家。</a></li>
+                        <li class="learning_list"><a></a></li>
+                        <li class="learning_list"><a></a></li>-->
+						<p class="learning_list">愚夫智学的AI深层学习课程将带给孩子更专业的AI学习体验，让每一个孩子都有机会成为AI小小科学家。</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<script>
+$(function(){
+	if(document.body.clientWidth == 768){
+		console.log('pad');
+		$(".learning").css({"padding-left":"50px"});
+		$(".title_text").css({"margin-left":"240px"});
+	}
+})
+</script>
+
+<style scoped>
+	li a{
+		color: #646262;
+	}
+	
+	li a:hover{
+		color: #2D1471;
+	}
+</style>

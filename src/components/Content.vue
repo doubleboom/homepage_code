@@ -1,0 +1,37 @@
+<template>
+<div id="content">
+	<swiper />
+	<aboutus />
+	<product />
+	<team />
+	<learning />
+	
+		
+	<div id="back_to_top">
+		<a href="#"><img src="../assets/images/back.png"></a>
+	</div>
+</div>
+</template>
+
+<script>
+
+import Swiper from './maindir/Swiper'
+import Learning from './maindir/Learning'
+import Product from './maindir/Product'
+import Aboutus from './maindir/About'
+import Team from './maindir/Team'
+export default {
+  name: 'Content',
+  components: {
+    "swiper":Swiper,
+	"learning":Learning,
+	"product":Product,
+	"aboutus":Aboutus,
+	"team":Team
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
