@@ -1,4 +1,4 @@
-# yufu_edu_homepage-ly
+# yufu_edu_homepage
 
 > homepage Vue version
 
