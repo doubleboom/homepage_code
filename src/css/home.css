@@ -224,12 +224,13 @@ a{
     padding: 1em 5% 5% 7%;
     margin: 6% 0;
 	margin-top: 10px;
-	height: 300px;
+	height: 400px;
 }
 #learning{
 	position: relative;
 	top: 55px;
 	margin-bottom: 1px;
+	height: 600px;
 }
 #bottom{
     background-color: #323232;
@@ -538,8 +539,21 @@ a{
 		line-height: 60px;
 	}
 	.container{
-		max-width:2000px;
+		max-width:1800px;
 	}
+	#xrj{
+		height: 700px;
+	}
+	#learning{
+		height:800px;
+	}
+	#learning_out,#learning_in{
+		height: 530px;
+	}
+	#nav_in .logo{
+		width: 285px;
+	}
+
 }
 @media(min-width: 2500px){
 	
@@ -564,10 +578,13 @@ a{
 		height: 807px;
 	}
 	#learning_out,#learning_in{
-		height: 600px;
+		height: 660px;
 	}
 	#learning_out{
 		margin-bottom: 55px;
+	}
+	#learning{
+		height: 1000px;
 	}
 }
 @media(min-width: 769px ){

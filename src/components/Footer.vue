@@ -53,7 +53,7 @@
                     <img id="phonepng" src="../assets/images/phone.png">
                     <p>
                         <b id="number">0755-26600390</b>
-						<span id="email">info@yufu-ai.com</span>
+						<span id="email">info@yufuedu.com</span>
                         <span>每天9:00-18:00 (仅市话费)</span>
                     </p>
                 </div>

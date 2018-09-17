@@ -64,7 +64,7 @@
 	}
 		
 		$("ul li a,#xsmenu a,#login a").click(function(){
-			alert("敬请期待！");
+			alert(document.body.clientWidth);
 		})
 	})
 </script>
