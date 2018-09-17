@@ -64,13 +64,128 @@
 	}
 		
 		$("ul li a,#xsmenu a,#login a").click(function(){
-			alert(document.body.clientWidth);
+			alert("敬请期待！");
 		})
 	})
 </script>
 
-<style scoped>
+<style scoped >
+	#nav{
+		background-color: #333F50;
+		z-index: 999;
+		width: 100%;
+	}
+	#nav_in{
+		overflow: hidden;
+		padding: 0.3em 0;
+	}
+	#nav_in .logo{
+		width: 15%;
+		float: left;
+		margin-bottom: 2px;
+		margin-top: 2px;
+		padding-top: 8px;
+		height: 62px;
+		width: 200px;
+	}
+	#nav_in #logo_xs{
+		float: left;
+	}
+	#menu_btn{
+		margin-top: 4px;
+		float: right;
+		height: 1.4em;
+	}
 	#xsmenu{
 		display: none;
+		clear: left;
+	}
+	#xsmenu a{
+		font-size:0.8em;
+		line-height: 0em;
+	}
+	#nav_in ul{
+		float: right;
+		width: 75%;
+		overflow: hidden;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	#nav_in li{
+		float: left;
+		width: 16%;
+		text-align: center;
+		overflow: hidden;
+	}
+	#nav_in a{
+		float: left;
+		display: inline-block;
+		width: 100%;
+		padding: 1em 0;
+		overflow: hidden;
+	}
+	#nav_in li p{
+		color: white;
+		margin: 0;
+		font-size: 1.4em;
+		float: left;
+		width: 100%;
+		transition: all 0.3s;
+	}
+	#nav_in span{
+		color: #CBCCCD;
+		font-size: 0.9em;
+		float: left;
+		width: 100%;
+		transition: all 0.3s;
+	}
+	#nav_in li:hover span,#nav_in li:hover p{
+		color: #E9BD25;
+	}
+	#nav_in li.click span,#nav_in li.click p{
+		color: #E9BD25;
+	}
+	#login{
+		padding-left: 30px;
+		margin-left: 20px;
+	}
+	#login a{
+		width:  48%;
+		line-height: 42px;
+	}
+	#xsmenu{
+		display: none;
+	}
+	#logo_xs{
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	@media(min-width:1921px) and (max-width: 2499px){
+		#nav_in .logo{
+			margin-top: 5px;
+			padding-bottom: 3px;
+			height: 80px;
+			width: 220px;
+		}
+		#login a{
+			font-size: 0.8em;
+			line-height: 60px;
+		}
+	}
+	@media(min-width: 2500px){
+		#nav_in .logo{
+			width: 380px;
+			height: 120px;
+			padding-top: 20px;
+		}
+		#login a{
+			line-height: 80px;
+		}
+	}
+	@media(min-width: 769px ){
+		#nav_in ul{
+			margin-top: 3px;
+		}
 	}
 </style>

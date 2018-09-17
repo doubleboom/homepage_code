@@ -33,5 +33,11 @@ export default {
 </script>
 
 <style scoped>
-
+#back_to_top{
+		display: none;
+		position: fixed;
+		bottom: 30px;
+		right: 20px;
+		z-index: 999;
+	}
 </style>

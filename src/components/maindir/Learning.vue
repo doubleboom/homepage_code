@@ -76,4 +76,143 @@ $(function(){
 	li a:hover{
 		color: #2D1471;
 	}
+	#learning_out{
+    background: url("../../assets/images/learning.png") no-repeat;
+    background-size:100% auto;
+	border-radius: 0.7em;
+	}
+	#learning_in{
+		background-color: rgba(255, 255, 255, 0.68);
+		background-size: 100% auto;
+		border-radius: 0.7em;
+		padding: 1em 5% 5% 7%;
+		margin: 6% 0;
+		margin-top: 10px;
+		height: 400px;
+	}
+	#learning{
+		position: relative;
+		top: 55px;
+		margin-bottom: 1px;
+		height: 600px;
+	}
+@media(max-width: 1024px){
+		
+		#learning{
+		border-top: #EAE9E9 2px solid;
+		border-left: #EAE9E9 4px solid;
+		border-right: #EAE9E9 10px solid;
+		border-radius: 20px;
+		margin-top: -54px;
+		height: 1200px;
+		margin-bottom: 60px;
+	}
+	#learning_out{
+		background:none;
+	}
+	#learning_in{
+		margin-bottom: 55px;
+	}
+	#learning_in ul{
+		padding-left: 0px;
+		margin-bottom: 20px;
+	}
+	.learning_title{
+		margin-bottom: 50px;
+	}
+	.learning_title img{
+		margin-left: 38%;
+		margin-right: 38%;
+		height: 70px;
+		width: 70px;
+	}
+	.learning_title div{
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		margin-left: 34%;
+	}
+	.learning_list {
+		font-size: 0.9em;
+		margin-bottom: 60px;
+	}
+	#ai{
+		padding-left: 8px;
+	}
+}
+@media(min-width: 666px) and (max-width: 668px){
+	#learning{
+		height: 950px;
+	}
+	.learning_title img{
+		margin-left: 200px;
+	}
+	.title_text{
+		border-left: 15px white solid;
+	}
+	#ai{
+		margin-left: 185px;
+	}	
+}
+@media(min-width:1921px) and (max-width: 2499px){
+	#learning{
+		height:800px;
+	}
+	#learning_out,#learning_in{
+		height: 530px;
+	}
+}
+@media(min-width: 2500px){
+		
+	#learning_out,#learning_in{
+		height: 660px;
+	}
+	#learning_out{
+		margin-bottom: 55px;
+	}
+	#learning{
+		height: 1000px;
+	}	
+}
+@media(min-width: 769px ){
+	.learning{
+		float: left;
+		width:28%;
+		margin-right: 8%;
+	}
+	.learning:last-child{
+		margin-right: 0;
+	}
+	.learning ul{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	.learning ul a{
+		font-size: 1.8em
+	}
+	.learning_title{
+		text-align: center;
+	}
+	.learning_title b{
+		display: inline-block;
+		width: 100%;
+		font-size: 1.6em;
+		position: relative;
+		top: -1em;
+	}
+	.learning_title img{
+		width: 50%;
+	}
+	.learning_list{
+		font-size: 1.2em;
+		color: black;
+		overflow:visible;
+		word-break:normal;
+		text-overflow: ellipsis;
+		margin: 0.5em 0;
+		margin-top: 0px;
+		padding-bottom: 20px;
+	}		
+}
 </style>

@@ -74,4 +74,105 @@ $(function(){
 	.say{
 		display: none;
 	}
+	#team_in{
+    overflow: hidden;
+    text-align: center;
+	}
+	.name b{
+		font-size: 1.2em;
+	}
+	.name{
+		margin: 0.5em 0;
+	}
+	.pro span{
+		display: inline-block;
+		width: 10em;
+		background-color: white;
+		border: 1px solid #A7DAD7;
+		padding: 0.5em 0;
+		font-size: 1.1em;
+		border-radius: 1.4em;
+		font-weight: bold;
+	}
+	.team{
+		border-radius: 20px;
+	}
+	.say{
+		font-size: 1.0em;
+		text-shadow: 0.5px 0.5px 0.5px black;
+	}
+	#team_in .team ul{
+		margin-top: 20px;
+		padding-top: 20px;
+	}
+	.team .pro{
+		margin-bottom: 20px;
+	}
+	.team_{
+		font-size: 0.9em;
+		margin: 0.3em 0;
+		color: #727171;
+	}
+	#xrj{
+		height: 460px;
+	}
+	@media(max-width: 1024px){
+		#team_in .name b{
+			font-size: 0.9em;
+		}
+		#team_in ul .team_{
+			font-size: 0.7em;
+		}
+		#team_in ul{
+			padding-left: 0px;
+			margin-bottom: 30px;
+			border-bottom: #E9E7E7 1px solid;
+			padding-bottom: 20px;
+		}
+		#team_in .pro span{
+			font-size: 0.7em;
+		}
+		#team_in .pro{
+			margin-bottom: 8px;
+		}
+	}
+	@media(min-width: 666px) and (max-width: 668px){
+	
+		.team_{
+			width:  192px;
+		}
+	
+	}
+	@media(min-width:1921px) and (max-width: 2499px){
+		#xrj{
+		height: 700px;
+		}
+	}
+	@media(min-width: 2500px){
+		#xrj,#zh,#syf{
+			height: 807px;
+		}
+	}
+	@media(min-width: 769px ){
+		.team{
+			float: left;
+			width: 31%;
+			margin-right: 3.5%;
+			background-color: #F4F4F4;
+		}
+		.team:last-child{
+			margin-right: 0;
+		}
+		.team ul{
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			margin-top: 4em;
+			margin-bottom: 2em;
+			font-size: 1.4em
+		}
+		.team img{
+			width: 30%;
+		}
+	}
 </style>

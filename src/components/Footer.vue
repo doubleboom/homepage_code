@@ -130,6 +130,93 @@ $(function(){
 		margin-right: 80px;
 		display: none;
 	}
+	#bottom{
+    background-color: #323232;
+	position: relative;
+	}
+	#bottom_in{
+		overflow: hidden;
+		padding: 5% 0;
+	}
+	#bottom_left{
+		float: left;
+		width:60%;
+	}
+	#bottom_right{
+		float: left;
+		width: 40%;
+	}
+	#float{
+		border-bottom: 1px solid #3E3E3E;
+		overflow: hidden;
+		padding-bottom: 1em;
+		margin-bottom: 1em;
+	}
+	.bottom_{
+		float: left;
+		width: 20%;
+	}
+	.bottom_ b{
+    display: inline-block;
+    width: 100%;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 0.7em;
+    cursor: default;
+	font-size: 1.5em;
+	}
+	.bottom_ ul{
+		margin: 0;
+		color: #A2A2A2;
+		font-size: 0.7em;
+		padding-left: 1.4em;
+	}
+	.bottom_ ul *{
+		font-size: 1.3em;
+	}
+	.bottom_ li{
+		margin: 0.7em 0;
+	}
+	#bottom_right{
+		text-align: center;
+		color: white;
+	}
+	#go{
+		position: relative;
+	}
+	#go_ a{
+		display: inline-block;
+		overflow: hidden;
+		margin-right: 5%;
+	}
+	#go_ a img{
+		float: left;
+	}
+	#go_ a:last-child{
+		margin-right: 0;
+	}
+	#phone img{
+		width: 9%;
+		position: relative;
+		top: -2em;
+		left: 0.5em;
+	}
+	#phone p{
+		display: inline-block;
+		width: 50%;
+		text-align: left;
+		margin-left: 1%;
+	}
+	#phone span{
+		display: inline-block;
+		width: 100%;
+		font-size: 0.7em;
+		color: #A2A2A2;
+	}
+	#phone b{
+		font-size: 2em;
+		font-weight: normal;
+	}
 	@media(min-width: 2200px){
 		#vx{
 			display: flex;
@@ -142,6 +229,60 @@ $(function(){
 			margin-bottom: 10px;
 			margin-right: 360px;
 			display: none;
+		}
+	}
+	@media(max-width: 1024px){
+		#phone *{
+			font-size: 10px;
+			text-align: center;
+		}
+		#go_{
+			width: 400px;
+		}
+		#phone{
+			width: 400px;
+			height: 80px;
+		}
+		#bottom{
+			min-width: 100%;
+			margin-bottom: 0px;
+		}
+		#bottom *{
+			text-align: center;
+		}
+		#bottom_right{
+			width: 100%;
+		}
+		#phone{
+			width: 100%;
+		}
+		#phone b{
+
+		}
+		#go_{
+			width: 100%;
+		}
+		#vx{
+			visibility: hidden;
+		}
+		#go_{
+			margin-top: 30px;
+		}
+		#phone p span{
+			text-align: left;
+		}
+	}
+	@media(min-width: 666px) and (max-width: 668px){
+		#phone p span{
+			padding-left: 65px;
+		}
+	}
+	@media(min-width: 2500px){
+		#go_ a{
+			width: 12%;
+		}
+		#go_ a img{
+			width: 90px;
 		}
 	}
 </style>

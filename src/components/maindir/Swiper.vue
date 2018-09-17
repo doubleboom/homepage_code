@@ -46,5 +46,16 @@ export default{
 </script>
 
 <style scoped>
-	
+	#home_swiper img{
+		width: 100%;
+	}
+	@media(max-width: 1024px){
+		#home_swiper{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.swiper-slide-active{
+			width: 100%;
+		}
+	}
 </style>

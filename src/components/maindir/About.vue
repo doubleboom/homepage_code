@@ -39,7 +39,98 @@
 </script>
 
 <style scoped>
+	#about{
+		margin-top: 3%;
+	}
+	#about_in>p{
+		text-align: center;
+		margin: 0.5em 0;
+		font-size: 1.1em;
+	}
+	#about_de{
+		overflow: hidden;
+		margin-top: 3%;
+	}
+	#about_de>img{
+		float: left;
+		width: 48%;
+	}
+	#about_de ul{
+		float: left;
+		margin-left: 4%;
+		width: 48%;
+		margin-top: 2em;
+		list-style-type: none;
+		padding: 0;
+	}
+	#about_de li{
+		margin: 1em 0;
+	}
+	#about_ti b{
+		font-size: 2em;
+		color: #7DCCC7;
+	}
+	#about_ti p{
+		margin: 0.4em 0;
+		font-size: 0.8em;
+		color: #B8B8B8;
+	}
+	#about_go{
+		overflow: hidden;
+	}
+	#about_go a{
+		float: left;
+		padding: 0 0.7em;
+		border-right: 1px solid #B8B8B8;
+		color: #B8B8B8;
+		font-size: 1.4em;
+	}
+	#about_go a:first-child{
+		padding-left: 0;
+	}
+	#about_go a:last-child{
+		border: none;
+	}
 	#c3{
 		width: 100%;
+	}
+	@media(max-width: 1024px){
+		#about_de ul{
+			margin-bottom: 30px;
+		}
+		#about_in p{
+			font-size: 0.75em;
+		}
+		#about_de ul{
+			width: 100%;
+			margin-left: 0px;
+		}
+		#eyeli{
+			position: relative;
+			padding-bottom: 10px;
+		}
+		#eye{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			top:50%; 
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+		#about_ti p{
+			text-align: center;
+			font-size: 0.6em;
+		}
+		#aib{
+			font-size: 1.0em;
+		}
+		#about_go{
+			padding-left: 5%;
+		}
+		#about_go a{
+			font-size: 0.9em;
+			padding-right: 8px;
+			padding-left: 8px;
+		}
 	}
 </style>
