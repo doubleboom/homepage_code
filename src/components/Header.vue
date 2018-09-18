@@ -41,12 +41,7 @@
             </ul>
 			<img id="menu_btn" class="d-block d-lg-none" src="../assets/images/button.png">
 			<menu id="xsmenu">
-				<div><a href="#"><span>首页</span></a></div>
-				<div><a href="#"><span>课程介绍</span></a></div>
-				<div><a href="#"><span>教学模式</span></a></div>
-				<div><a href="#"><span>AI&nbsp;应用</span></a></div>
-				<div><a href="#"><span>关于我们</span></a></div>
-				<div><a href="#"><span>登录注册</span></a></div>
+				<div v-for="menu_name in menu_names"><a href="#"><span>{{menu_name}}</span></a></div>
 			</menu>
         </div>
     </div>
@@ -67,9 +62,24 @@
 			alert("敬请期待！");
 		})
 	})
+	
+	export default{
+		name: "header",
+		data(){
+			return {
+				isShake:false,
+				menu_names:['首页','课程介绍','教学模式','AI应用','关于我们','登录/注册']
+			}	
+		},
+		methods: {
+//			myfun: function(){
+//				this.isShake = !this.isShake;
+//			}
+		}
+	}
 </script>
 
-<style scoped >
+<style scoped lang="scss">
 	#nav{
 		background-color: #333F50;
 		z-index: 999;
@@ -78,21 +88,20 @@
 	#nav_in{
 		overflow: hidden;
 		padding: 0.3em 0;
+		display: flex;
+		justify-content: center;
+		align-items:center;
 	}
 	#nav_in .logo{
-		width: 15%;
 		float: left;
-		margin-bottom: 2px;
-		margin-top: 2px;
-		padding-top: 8px;
-		height: 62px;
+		height: 56px;
 		width: 200px;
 	}
 	#nav_in #logo_xs{
 		float: left;
 	}
 	#menu_btn{
-		margin-top: 4px;
+		margin-top: 10px;
 		float: right;
 		height: 1.4em;
 	}
@@ -161,12 +170,22 @@
 		padding-top: 3px;
 		padding-bottom: 3px;
 	}
+	@media(max-width: 768px ) {
+		#nav_in{
+			display: inline;
+		}
+		#nav{
+	
+		}
+		#logo_xs{
+			margin-top: 6px;
+			margin-bottom: 8px;
+		}
+	}
 	@media(min-width:1921px) and (max-width: 2499px){
 		#nav_in .logo{
-			margin-top: 5px;
-			padding-bottom: 3px;
-			height: 80px;
-			width: 220px;
+			height: 70px;
+			width: 250px;
 		}
 		#login a{
 			font-size: 0.8em;
@@ -176,8 +195,7 @@
 	@media(min-width: 2500px){
 		#nav_in .logo{
 			width: 380px;
-			height: 120px;
-			padding-top: 20px;
+			height: 100px;
 		}
 		#login a{
 			line-height: 80px;

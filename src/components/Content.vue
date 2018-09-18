@@ -30,6 +30,26 @@ export default {
 	"team":Team
   }
 }
+	
+$(function(){
+	if(document.body.clientWidth <= 768){
+		console.log("phone");
+		var p=0;
+		var t=0;
+            $(window).scroll(function(e){
+                p=$(this).scrollTop();
+                if(t<=p){
+    				$("#back_to_top").fadeIn();
+					$("#xsmenu").slideUp();
+                }
+                else{
+					$("#back_to_top").fadeOut();
+					$("#xsmenu").slideUp();
+                }
+                t = p;
+            })
+	}
+});
 </script>
 
 <style scoped>

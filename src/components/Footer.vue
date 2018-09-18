@@ -49,60 +49,39 @@
             </div>
             <div id="bottom_right">
                 <div id="phone">
-					<a id="abtus_xs" href="" class="d-block d-lg-none"><b>关于我们</b></a>
                     <img id="phonepng" src="../assets/images/phone.png">
                     <p>
+						<a id="abtus_xs" href="###" class="d-block d-lg-none"><b>联系我们</b></a>
                         <b id="number">0755-26600390</b>
 						<span id="email">info@yufuedu.com</span>
                         <span>每天9:00-18:00 (仅市话费)</span>
                     </p>
                 </div>
                 <div id="go_">
-					<a href=""></a>
-					<div id="vx" >
-						<img src="../assets/images/vx.jpg"></img>
+                    <a href="###"><img  data-toggle="modal" data-target=".bd-example-modal-sm"  id="wei" src="../assets/images/wei.png"></a>
+					<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<p class="modal-title" id="exampleModalLabel">关注 愚夫智学</p>
+						<div class="modal-content">
+							<div id="vxshow">
+								<img src="../assets/images/vx.jpg">
+							</div>
+						</div>
 					</div>
-                    <a href="#wei"><img id="wei" src="../assets/images/wei.png"></a>
-                    <a href="https://weibo.com/yufuzhixue"><img src="../assets/images/wb.png"></a>
-					<a href=""></a>
-					
+					</div>
+                    <a href="https://weibo.com/yufuzhixue"><img src="../assets/images/wb.png"></a>					
                 </div>
             </div>
         </div>
     </div>
-	<div id="vx_xs" >
-		<img src="../assets/images/vx.jpg"></img>
-	</div>
 </div>
 </template>
 
 <script>
-$(function(){
-	if(document.body.clientWidth > 666 && document.body.clientWidth < 1024){
-		console.log("heng");
-		$("#number").css({"padding-left":"60px"});
-		$(".title_text").css({"padding-left":"10px"});
-		if(document.body.clientWidth > 767){
-			console.log("pad");
-			$("#number").css({"padding-left":"90px"});
-		}
-	}
-	
-	if(document.body.clientWidth <1024){
-	   
-			$("#wei").click(function(){
-				$("#vx_xs").fadeToggle();
-			});
-	   
-	   }else{
-		   $("#wei").click(function(){
-			   $("#vx img").fadeToggle();
-		   })
-	   }
-})
+
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 	li a{
 		color: #CBCACA;
 	}
@@ -112,23 +91,6 @@ $(function(){
 	}
 	#email{
 		font-size: 1.4em;
-	}
-	#vx_xs{
-		width:100%;
-		height: 300px;
-		display: none;
-	}
-	#vx{
-		display: flex;
-		justify-content:center;
-	}
-	#vx img{
-		border-radius: 20px;
-		width: 150px;
-		height: 150px;
-		margin-bottom: 10px;
-		margin-right: 80px;
-		display: none;
 	}
 	#bottom{
     background-color: #323232;
@@ -163,7 +125,7 @@ $(function(){
     color: white;
     margin-bottom: 0.7em;
     cursor: default;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	}
 	.bottom_ ul{
 		margin: 0;
@@ -198,7 +160,7 @@ $(function(){
 	#phone img{
 		width: 9%;
 		position: relative;
-		top: -2em;
+		top: -4.2em;
 		left: 0.5em;
 	}
 	#phone p{
@@ -210,45 +172,43 @@ $(function(){
 	#phone span{
 		display: inline-block;
 		width: 100%;
-		font-size: 0.7em;
+		font-size: 1.2em;
 		color: #A2A2A2;
 	}
 	#phone b{
 		font-size: 2em;
 		font-weight: normal;
 	}
-	@media(min-width: 2200px){
-		#vx{
-			display: flex;
-			justify-content:center;
-		}
-		#vx img{
+	#vxshow{
+		width: 100%;
+		height: 200px;
+		img{
 			border-radius: 20px;
-			width: 300px;
-			height: 300px;
-			margin-bottom: 10px;
-			margin-right: 360px;
-			display: none;
+			width: 100%;
 		}
+	}
+	@media(min-width: 2200px){
+
 	}
 	@media(max-width: 1024px){
 		#phone *{
 			font-size: 10px;
-			text-align: center;
 		}
 		#go_{
 			width: 400px;
 		}
 		#phone{
-			width: 400px;
-			height: 80px;
+			height: 100px;
 		}
 		#bottom{
 			min-width: 100%;
 			margin-bottom: 0px;
+			height: 180px;
+		}
+		#bottom_in{
+			padding-bottom: 0px;
 		}
 		#bottom *{
-			text-align: center;
 		}
 		#bottom_right{
 			width: 100%;
@@ -256,25 +216,32 @@ $(function(){
 		#phone{
 			width: 100%;
 		}
+		#phonepng{
+			margin-top: 0px;
+		}
 		#phone b{
 
 		}
 		#go_{
 			width: 100%;
-		}
-		#vx{
-			visibility: hidden;
-		}
-		#go_{
-			margin-top: 30px;
+			height: 50px;
 		}
 		#phone p span{
 			text-align: left;
+		}
+		#phone img{
+			width: 9%;
+			position: relative;
+			top: -6.8em;
+			left: 0.5em;
 		}
 	}
 	@media(min-width: 666px) and (max-width: 668px){
 		#phone p span{
 			padding-left: 65px;
+		}
+		.modal-dialog{
+			margin-top: 30px;
 		}
 	}
 	@media(min-width: 2500px){
@@ -283,6 +250,21 @@ $(function(){
 		}
 		#go_ a img{
 			width: 90px;
+		}
+	}
+	@media(max-width: 321px){
+		#phone #number{
+			font-size: 1.2em;
+		}
+	}
+	@media(max-width:769px) and (min-width:767px){
+		#phone{
+			img{
+				margin-left: 140px;
+			}
+		}
+		#bottom_in{
+			padding-top: 25px;
 		}
 	}
 </style>

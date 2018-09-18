@@ -38,7 +38,7 @@
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 	#about{
 		margin-top: 3%;
 	}
@@ -125,12 +125,15 @@
 			font-size: 1.0em;
 		}
 		#about_go{
-			padding-left: 5%;
-		}
-		#about_go a{
-			font-size: 0.9em;
+			display: flex;
+			justify-content: center;
+			a{
+			font-size: 0.7em;
 			padding-right: 8px;
 			padding-left: 8px;
+			}
 		}
+	}
+	@media(min-width: 666px) and (max-width: 668px){
 	}
 </style>

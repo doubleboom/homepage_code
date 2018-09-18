@@ -13,9 +13,9 @@
                 <div class="learning col-lg">
                     <ul>
                         <li class="learning_title">
-                            <img src="../../assets/images/learning1.png">
                             <div class="title_text"><b>基础原理</b></div>
                         </li>
+						<li class="img learning_title"><img src="../../assets/images/learning1.png"></li>
                         <!--<li class="learning_list"><a>通过愚夫智学针对中国孩子开的沉</a></li>
                         <li class="learning_list"><a>浸式AI教学模式可以让孩子充分学</a></li>
                         <li class="learning_list"><a>习AI的基础原理。将抽象复杂的AI</a></li>
@@ -27,9 +27,9 @@
                 <div class="learning col-lg">
                     <ul>
                         <li class="learning_title">
-                            <img src="../../assets/images/learning2.png">
                             <div id="ai" class="title_text"><b>AI应用&nbsp;</b></div>
                         </li>
+						<li class="img learning_title"><img src="../../assets/images/learning2.png"></li>
                         <!--<li class="learning_list"><a>愚夫智学主打无编程的AI应用制作</a></li>
                         <li class="learning_list"><a>模式，让每一个孩子都能成为独立</a></li>
                         <li class="learning_list"><a>的AI应用制作者，将孩子无穷的想</a></li>
@@ -41,9 +41,9 @@
                 <div class="learning col-lg">
                     <ul>
                         <li class="learning_title">
-                            <img src="../../assets/images/learning3.png">
                             <div class="title_text"><b>深层学习</b></div>
                         </li>
+						<li class="img learning_title"><img src="../../assets/images/learning3.png"></li>
                         <!--<li class="learning_list"><a>愚夫智学的AI深层学习课程将带给</a></li>
                         <li class="learning_list"><a>孩子更专业的AI学习体验，将每一</a></li>
                         <li class="learning_list"><a>个孩子都有机会成为AI小小科学家。</a></li>
@@ -59,20 +59,13 @@
 </template>
 
 <script>
-$(function(){
-	if(document.body.clientWidth == 768){
-		console.log('pad');
-		$(".learning").css({"padding-left":"50px"});
-		$(".title_text").css({"margin-left":"240px"});
-	}
-})
+
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 	li a{
 		color: #646262;
 	}
-	
 	li a:hover{
 		color: #2D1471;
 	}
@@ -89,6 +82,7 @@ $(function(){
 		margin: 6% 0;
 		margin-top: 10px;
 		height: 400px;
+		padding-top: 30px;
 	}
 	#learning{
 		position: relative;
@@ -96,16 +90,20 @@ $(function(){
 		margin-bottom: 1px;
 		height: 600px;
 	}
-@media(max-width: 1024px){
+	.learning_list{
+		line-height: 2.0em;
+	}
+	
+@media(max-width: 768px){
 		
-		#learning{
+	#learning{
 		border-top: #EAE9E9 2px solid;
 		border-left: #EAE9E9 4px solid;
 		border-right: #EAE9E9 10px solid;
 		border-radius: 20px;
 		margin-top: -54px;
-		height: 1200px;
 		margin-bottom: 60px;
+		height: 950px;
 	}
 	#learning_out{
 		background:none;
@@ -118,41 +116,33 @@ $(function(){
 		margin-bottom: 20px;
 	}
 	.learning_title{
-		margin-bottom: 50px;
+		margin-bottom: 25px;
+		display: flex;
+        justify-content: center;
+		img{
+			height: 70px;
+			width: 70px;
+		}
+	
 	}
-	.learning_title img{
-		margin-left: 38%;
-		margin-right: 38%;
-		height: 70px;
-		width: 70px;
+	.img{
+			margin-bottom: 5px;
 	}
 	.learning_title div{
 		position: absolute;
 		left: 0px;
 		right: 0px;
-		margin-left: 34%;
+		text-align: center;
 	}
 	.learning_list {
 		font-size: 0.9em;
 		margin-bottom: 60px;
-	}
-	#ai{
-		padding-left: 8px;
 	}
 }
 @media(min-width: 666px) and (max-width: 668px){
 	#learning{
 		height: 950px;
 	}
-	.learning_title img{
-		margin-left: 200px;
-	}
-	.title_text{
-		border-left: 15px white solid;
-	}
-	#ai{
-		margin-left: 185px;
-	}	
 }
 @media(min-width:1921px) and (max-width: 2499px){
 	#learning{
@@ -199,7 +189,6 @@ $(function(){
 		width: 100%;
 		font-size: 1.6em;
 		position: relative;
-		top: -1em;
 	}
 	.learning_title img{
 		width: 50%;
@@ -214,5 +203,25 @@ $(function(){
 		margin-top: 0px;
 		padding-bottom: 20px;
 	}		
+}
+@media(max-width: 321px){
+		#learning{
+			height: 1600px;
+		}
+}
+@media(min-width: 370px) and (max-width: 600px){
+		#learning{
+			height:  1300px;
+		}
+}
+@media(min-width: 567px) and (max-width: 569px){
+		#learning{
+			height:  1050px;
+		}
+}
+@media(min-width: 1023px) and (max-width: 1025px){
+	#learning_in{
+		height: 360px;
+	}
 }
 </style>
